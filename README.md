@@ -28,9 +28,9 @@ By using Data Science and some geometric factors about the relation between dist
 
 In order to explore the previous questions, we need to use the following data in the research.
 
-1. [List of Ho Chi Minh City administrative units](http://bit.ly/30r0yU8) from Wikipedia. It gives us a list of all urban districts of HCMC with their area (in $km^2$), population (in 2015) and the density of each district (people/$km^2$).
+1. [List of Ho Chi Minh City administrative units](http://bit.ly/30r0yU8) from Wikipedia. It gives us a list of all urban districts of HCMC with their area (in km²), population (in 2015) and the density of each district (people/km²).
 2. List of the coordinates (latitude, longitude) of all urban districts in HCMC. This list can be generated based on the name of each district and package *geopy.geocoders.Nominatim*.
-3. [List of average housing prices](https://mogi.vn/gia-nha-dat) per $m^2$ in HCMC.
+3. [List of average housing prices](https://mogi.vn/gia-nha-dat) per m² in HCMC.
 4. A `.json` file contains all coordinates where we use it to create a choropleth map of Housing Sales Price Index of HCMC. I create this file by myself using [OpenStreetMap](https://nominatim.openstreetmap.org).
 
 ## Methodology
