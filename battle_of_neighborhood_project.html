@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <!-- saved from url=(0068)file:///C:/Users/dinha/Downloads/battle_of_neighborhood_project.html -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>battle_of_neighborhood_project</title><script src="./capstone_project_files/require.min.js.téléchargement"></script>
-<script src="./capstone_project_files/jquery.min.js.téléchargement"></script>
+<title>battle_of_neighborhood_project</title><script src="https://github.com/dinhanhthi/cafe-in-hcm/blob/master/capstone_project_files/require.min.js.téléchargement"></script>
+<script src="https://github.com/dinhanhthi/cafe-in-hcm/blob/master/capstone_project_files/jquery.min.js.téléchargement"></script>
 
 <style type="text/css">
     /*!
@@ -8451,15 +8451,15 @@ label {
 }
 /* Flexible box model classes */
 /* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
-/* This file is a compatability layer.  It allows the usage of flexible box 
+/* This file is a compatability layer.  It allows the usage of flexible box
 model layouts accross multiple browsers, including older browsers.  The newest,
 universal implementation of the flexible box model is used when available (see
-`Modern browsers` comments below).  Browsers that are known to implement this 
+`Modern browsers` comments below).  Browsers that are known to implement this
 new spec completely include:
 
     Firefox 28.0+
     Chrome 29.0+
-    Internet Explorer 11+ 
+    Internet Explorer 11+
     Opera 17.0+
 
 Browsers not listed, including Safari, are supported via the styling under the
@@ -11233,7 +11233,7 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
-  /* This injects handle bars (a short, wide = symbol) for 
+  /* This injects handle bars (a short, wide = symbol) for
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
@@ -11676,7 +11676,7 @@ ul.typeahead-list > li > a {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
-    
+
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
 .ansi-black-fg { color: #3E424D; }
 .ansi-black-bg { background-color: #3E424D; }
@@ -11730,14 +11730,14 @@ div#notebook {
   div.cell {
     display: block;
     page-break-inside: avoid;
-  } 
-  div.output_wrapper { 
-    display: block;
-    page-break-inside: avoid; 
   }
-  div.output { 
+  div.output_wrapper {
     display: block;
-    page-break-inside: avoid; 
+    page-break-inside: avoid;
+  }
+  div.output {
+    display: block;
+    page-break-inside: avoid;
   }
 }
 </style>
@@ -11747,7 +11747,7 @@ div#notebook {
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="./capstone_project_files/MathJax.js.téléchargement"></script>
+    <script src="https://github.com/dinhanhthi/cafe-in-hcm/blob/master/capstone_project_files/MathJax.js.téléchargement"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config;executed=true">
     MathJax.Hub.Config({
@@ -12002,7 +12002,7 @@ main map and the choropleth map of AHP.</p>
 <span class="c1"># convert an address into latitude and longitude values</span>
 <span class="kn">from</span> <span class="nn">geopy.geocoders</span> <span class="k">import</span> <span class="n">Nominatim</span>
 <span class="c1"># tranform JSON file into a pandas dataframe</span>
-<span class="kn">from</span> <span class="nn">pandas.io.json</span> <span class="k">import</span> <span class="n">json_normalize</span>  
+<span class="kn">from</span> <span class="nn">pandas.io.json</span> <span class="k">import</span> <span class="n">json_normalize</span>
 
 <span class="c1"># Scrape the web to get the data</span>
 <span class="kn">from</span> <span class="nn">bs4</span> <span class="k">import</span> <span class="n">BeautifulSoup</span>
@@ -12069,7 +12069,7 @@ main map and the choropleth map of AHP.</p>
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_hcm</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">res_hcm</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">"District"</span><span class="p">,</span> <span class="s2">"Subdistrict"</span><span class="p">,</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_hcm</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">res_hcm</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">"District"</span><span class="p">,</span> <span class="s2">"Subdistrict"</span><span class="p">,</span>
                         <span class="s2">"Area (km2)"</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">"Population 2015"</span><span class="p">,</span> <span class="s2">""</span><span class="p">])</span>
 <span class="n">df_hcm</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">""</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">df_hcm</span> <span class="o">=</span> <span class="n">df_hcm</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">22</span><span class="p">]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">"index"</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -12080,7 +12080,7 @@ main map and the choropleth map of AHP.</p>
                                 <span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
                             <span class="p">)</span>
 <span class="c1"># Add the "Density" column = Population / Area</span>
-<span class="n">df_hcm</span><span class="p">[</span><span class="s2">"Density (pop/m2)"</span><span class="p">]</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">df_hcm</span><span class="p">[</span><span class="s2">"Population 2015"</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span> 
+<span class="n">df_hcm</span><span class="p">[</span><span class="s2">"Density (pop/m2)"</span><span class="p">]</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">df_hcm</span><span class="p">[</span><span class="s2">"Population 2015"</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
                                        <span class="o">/</span> <span class="n">df_hcm</span><span class="p">[</span><span class="s2">"Area (km2)"</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
                                    <span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 <span class="c1"># remove the word "District"</span>
@@ -12345,14 +12345,14 @@ main map and the choropleth map of AHP.</p>
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_housing_price</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">res_housing_price</span><span class="p">,</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_housing_price</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">res_housing_price</span><span class="p">,</span>
                                 <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">"District"</span><span class="p">,</span> <span class="s2">"Average Housing Price (1M VND)"</span><span class="p">])</span>
 <span class="n">df_housing_price</span> <span class="o">=</span> <span class="n">df_housing_price</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">19</span><span class="p">]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">"index"</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 
 <span class="c1"># Remove the word "Quận"</span>
 <span class="n">df_housing_price</span><span class="p">[</span><span class="s2">"District"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span> <span class="n">df_housing_price</span><span class="p">[</span><span class="s2">"District"</span><span class="p">]</span>
                                         <span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="s2">""</span><span class="p">)</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"Quận"</span><span class="p">,</span> <span class="s2">""</span><span class="p">)</span>
-                                        <span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> 
+                                        <span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
                                    <span class="p">)</span>
 
 <span class="c1"># Remove Vietnamese accents</span>
@@ -13140,7 +13140,7 @@ main map and the choropleth map of AHP.</p>
         <span class="n">fill</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
         <span class="n">fill_color</span><span class="o">=</span><span class="s1">'#3186cc'</span><span class="p">,</span>
         <span class="n">fill_opacity</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span>
-        <span class="n">parse_html</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">map_hcm</span><span class="p">)</span>  
+        <span class="n">parse_html</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">map_hcm</span><span class="p">)</span>
 
 <span class="n">map_hcm</span>
 </pre></div>
@@ -13160,7 +13160,7 @@ main map and the choropleth map of AHP.</p>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="./capstone_project_files/saved_resource.html" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe></div></div>
+<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="https://github.com/dinhanhthi/cafe-in-hcm/blob/master/capstone_project_files/saved_resource.html" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe></div></div>
 </div>
 
 </div>
@@ -13209,42 +13209,42 @@ main map and the choropleth map of AHP.</p>
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">getNearbyVenues</span><span class="p">(</span><span class="n">names</span><span class="p">,</span> <span class="n">latitudes</span><span class="p">,</span> <span class="n">longitudes</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="mi">1500</span><span class="p">,</span> <span class="n">LIMIT</span><span class="o">=</span><span class="mi">150</span><span class="p">):</span>
     <span class="n">venues_list</span><span class="o">=</span><span class="p">[]</span>
-    
+
     <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lng</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">names</span><span class="p">,</span> <span class="n">latitudes</span><span class="p">,</span> <span class="n">longitudes</span><span class="p">):</span>
         <span class="c1"># print(name)</span>
-            
+
         <span class="c1"># create the API request URL</span>
         <span class="n">url</span> <span class="o">=</span> <span class="s1">'https://api.foursquare.com/v2/venues/explore?&amp;client_id=</span><span class="si">{}</span><span class="s1">&amp;client_secret=</span><span class="si">{}</span><span class="s1">&amp;v=</span><span class="si">{}</span><span class="s1">&amp;ll=</span><span class="si">{}</span><span class="s1">,</span><span class="si">{}</span><span class="s1">&amp;radius=</span><span class="si">{}</span><span class="s1">&amp;limit=</span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
-            <span class="n">CLIENT_ID</span><span class="p">,</span> 
-            <span class="n">CLIENT_SECRET</span><span class="p">,</span> 
-            <span class="n">VERSION</span><span class="p">,</span> 
-            <span class="n">lat</span><span class="p">,</span> 
-            <span class="n">lng</span><span class="p">,</span> 
-            <span class="n">radius</span><span class="p">,</span> 
+            <span class="n">CLIENT_ID</span><span class="p">,</span>
+            <span class="n">CLIENT_SECRET</span><span class="p">,</span>
+            <span class="n">VERSION</span><span class="p">,</span>
+            <span class="n">lat</span><span class="p">,</span>
+            <span class="n">lng</span><span class="p">,</span>
+            <span class="n">radius</span><span class="p">,</span>
             <span class="n">LIMIT</span><span class="p">)</span>
-            
+
         <span class="c1"># make the GET request</span>
         <span class="n">results</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s2">"response"</span><span class="p">][</span><span class="s1">'groups'</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">'items'</span><span class="p">]</span>
-        
+
         <span class="c1"># return only relevant information for each nearby venue</span>
         <span class="n">venues_list</span><span class="o">.</span><span class="n">append</span><span class="p">([(</span>
-            <span class="n">name</span><span class="p">,</span> 
-            <span class="n">lat</span><span class="p">,</span> 
-            <span class="n">lng</span><span class="p">,</span> 
-            <span class="n">v</span><span class="p">[</span><span class="s1">'venue'</span><span class="p">][</span><span class="s1">'name'</span><span class="p">],</span> 
-            <span class="n">v</span><span class="p">[</span><span class="s1">'venue'</span><span class="p">][</span><span class="s1">'location'</span><span class="p">][</span><span class="s1">'lat'</span><span class="p">],</span> 
-            <span class="n">v</span><span class="p">[</span><span class="s1">'venue'</span><span class="p">][</span><span class="s1">'location'</span><span class="p">][</span><span class="s1">'lng'</span><span class="p">],</span>  
+            <span class="n">name</span><span class="p">,</span>
+            <span class="n">lat</span><span class="p">,</span>
+            <span class="n">lng</span><span class="p">,</span>
+            <span class="n">v</span><span class="p">[</span><span class="s1">'venue'</span><span class="p">][</span><span class="s1">'name'</span><span class="p">],</span>
+            <span class="n">v</span><span class="p">[</span><span class="s1">'venue'</span><span class="p">][</span><span class="s1">'location'</span><span class="p">][</span><span class="s1">'lat'</span><span class="p">],</span>
+            <span class="n">v</span><span class="p">[</span><span class="s1">'venue'</span><span class="p">][</span><span class="s1">'location'</span><span class="p">][</span><span class="s1">'lng'</span><span class="p">],</span>
             <span class="n">v</span><span class="p">[</span><span class="s1">'venue'</span><span class="p">][</span><span class="s1">'categories'</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">'name'</span><span class="p">])</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">results</span><span class="p">])</span>
 
     <span class="n">nearby_venues</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([</span><span class="n">item</span> <span class="k">for</span> <span class="n">venue_list</span> <span class="ow">in</span> <span class="n">venues_list</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">venue_list</span><span class="p">])</span>
-    <span class="n">nearby_venues</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'District'</span><span class="p">,</span> 
-                  <span class="s1">'District Latitude'</span><span class="p">,</span> 
-                  <span class="s1">'District Longitude'</span><span class="p">,</span> 
-                  <span class="s1">'Venue'</span><span class="p">,</span> 
-                  <span class="s1">'Venue Latitude'</span><span class="p">,</span> 
-                  <span class="s1">'Venue Longitude'</span><span class="p">,</span> 
+    <span class="n">nearby_venues</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'District'</span><span class="p">,</span>
+                  <span class="s1">'District Latitude'</span><span class="p">,</span>
+                  <span class="s1">'District Longitude'</span><span class="p">,</span>
+                  <span class="s1">'Venue'</span><span class="p">,</span>
+                  <span class="s1">'Venue Latitude'</span><span class="p">,</span>
+                  <span class="s1">'Venue Longitude'</span><span class="p">,</span>
                   <span class="s1">'Venue Category'</span><span class="p">]</span>
-    
+
     <span class="k">return</span><span class="p">(</span><span class="n">nearby_venues</span><span class="p">)</span>
 </pre></div>
 
@@ -14087,7 +14087,7 @@ main map and the choropleth map of AHP.</p>
 <span class="n">hcm_onehot</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">hcm_venues</span><span class="p">[[</span><span class="s1">'Venue Category'</span><span class="p">]],</span> <span class="n">prefix</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">prefix_sep</span><span class="o">=</span><span class="s2">""</span><span class="p">)</span>
 
 <span class="c1"># add district column back to dataframe</span>
-<span class="n">hcm_onehot</span><span class="p">[</span><span class="s1">'District'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hcm_venues</span><span class="p">[</span><span class="s1">'District'</span><span class="p">]</span> 
+<span class="n">hcm_onehot</span><span class="p">[</span><span class="s1">'District'</span><span class="p">]</span> <span class="o">=</span> <span class="n">hcm_venues</span><span class="p">[</span><span class="s1">'District'</span><span class="p">]</span>
 
 <span class="c1"># move district column to the first column</span>
 <span class="n">fixed_columns</span> <span class="o">=</span> <span class="p">[</span><span class="n">hcm_onehot</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]]</span> <span class="o">+</span> <span class="nb">list</span><span class="p">(</span><span class="n">hcm_onehot</span><span class="o">.</span><span class="n">columns</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
@@ -15211,9 +15211,9 @@ main map and the choropleth map of AHP.</p>
 <span class="c1"># add markers to the map</span>
 <span class="n">markers_colors</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">,</span> <span class="n">poi</span><span class="p">,</span> <span class="n">cluster</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span>
-        <span class="n">df_cafe</span><span class="p">[</span><span class="s1">'Latitude'</span><span class="p">],</span> 
-        <span class="n">df_cafe</span><span class="p">[</span><span class="s1">'Longitude'</span><span class="p">],</span> 
-        <span class="n">df_cafe</span><span class="p">[</span><span class="s1">'District'</span><span class="p">],</span> 
+        <span class="n">df_cafe</span><span class="p">[</span><span class="s1">'Latitude'</span><span class="p">],</span>
+        <span class="n">df_cafe</span><span class="p">[</span><span class="s1">'Longitude'</span><span class="p">],</span>
+        <span class="n">df_cafe</span><span class="p">[</span><span class="s1">'District'</span><span class="p">],</span>
         <span class="n">df_cafe</span><span class="p">[</span><span class="s1">'Cluster Labels'</span><span class="p">]</span>
 <span class="p">):</span>
     <span class="n">label</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Popup</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">poi</span><span class="p">)</span> <span class="o">+</span> <span class="s1">' - Cluster '</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">cluster</span><span class="p">),</span> <span class="n">parse_html</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -15225,7 +15225,7 @@ main map and the choropleth map of AHP.</p>
         <span class="n">fill</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
         <span class="n">fill_color</span><span class="o">=</span><span class="n">rainbow</span><span class="p">[</span><span class="n">cluster</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span>
         <span class="n">fill_opacity</span><span class="o">=</span><span class="mf">0.7</span><span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">map_clusters</span><span class="p">)</span>
-       
+
 <span class="n">map_clusters</span>
 </pre></div>
 
@@ -15244,7 +15244,7 @@ main map and the choropleth map of AHP.</p>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="./capstone_project_files/saved_resource(1).html" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe></div></div>
+<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="https://github.com/dinhanhthi/cafe-in-hcm/blob/master/capstone_project_files/saved_resource(1).html" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe></div></div>
 </div>
 
 </div>
@@ -15748,9 +15748,9 @@ main map and the choropleth map of AHP.</p>
 <span class="c1"># add markers to the map</span>
 <span class="n">markers_colors</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">,</span> <span class="n">poi</span><span class="p">,</span> <span class="n">cluster</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span>
-        <span class="n">df_cafe</span><span class="p">[</span><span class="s1">'Latitude'</span><span class="p">],</span> 
-        <span class="n">df_cafe</span><span class="p">[</span><span class="s1">'Longitude'</span><span class="p">],</span> 
-        <span class="n">df_cafe</span><span class="p">[</span><span class="s1">'District'</span><span class="p">],</span> 
+        <span class="n">df_cafe</span><span class="p">[</span><span class="s1">'Latitude'</span><span class="p">],</span>
+        <span class="n">df_cafe</span><span class="p">[</span><span class="s1">'Longitude'</span><span class="p">],</span>
+        <span class="n">df_cafe</span><span class="p">[</span><span class="s1">'District'</span><span class="p">],</span>
         <span class="n">df_cafe</span><span class="p">[</span><span class="s1">'Cluster Labels'</span><span class="p">]</span>
 <span class="p">):</span>
     <span class="n">label</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Popup</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">poi</span><span class="p">)</span> <span class="o">+</span> <span class="s1">' - Cluster '</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">cluster</span><span class="p">),</span> <span class="n">parse_html</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -15793,7 +15793,7 @@ main map and the choropleth map of AHP.</p>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="./capstone_project_files/saved_resource(2).html" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe></div></div>
+<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="https://github.com/dinhanhthi/cafe-in-hcm/blob/master/capstone_project_files/saved_resource(2).html" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe></div></div>
 </div>
 
 </div>
@@ -15834,9 +15834,9 @@ main map and the choropleth map of AHP.</p>
 <span class="c1"># add markers to the map</span>
 <span class="n">markers_colors</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">,</span> <span class="n">poi</span><span class="p">,</span> <span class="n">cluster</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span>
-        <span class="n">df_cafe</span><span class="p">[</span><span class="s1">'Latitude'</span><span class="p">],</span> 
-        <span class="n">df_cafe</span><span class="p">[</span><span class="s1">'Longitude'</span><span class="p">],</span> 
-        <span class="n">df_cafe</span><span class="p">[</span><span class="s1">'District'</span><span class="p">],</span> 
+        <span class="n">df_cafe</span><span class="p">[</span><span class="s1">'Latitude'</span><span class="p">],</span>
+        <span class="n">df_cafe</span><span class="p">[</span><span class="s1">'Longitude'</span><span class="p">],</span>
+        <span class="n">df_cafe</span><span class="p">[</span><span class="s1">'District'</span><span class="p">],</span>
         <span class="n">df_cafe</span><span class="p">[</span><span class="s1">'Cluster Labels'</span><span class="p">]</span>
 <span class="p">):</span>
     <span class="n">label</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Popup</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">poi</span><span class="p">)</span> <span class="o">+</span> <span class="s1">' - Cluster '</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">cluster</span><span class="p">),</span> <span class="n">parse_html</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -15879,7 +15879,7 @@ main map and the choropleth map of AHP.</p>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="./capstone_project_files/saved_resource(3).html" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe></div></div>
+<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="https://github.com/dinhanhthi/cafe-in-hcm/blob/master/capstone_project_files/saved_resource(3).html" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe></div></div>
 </div>
 
 </div>
@@ -15901,7 +15901,7 @@ main map and the choropleth map of AHP.</p>
   </div>
 
 
- 
+
 
 
 
